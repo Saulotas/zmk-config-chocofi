@@ -27,9 +27,14 @@
             tapping-term-ms = <300>;
             bindings = <&none>, <&soft_off>;
         };
+
+        // Soft on behavior
+        soft_on: soft_on {
+            compatible = "zmk,behavior-soft-on";
+            label = "SOFT_ON";
+        };
     };
 
-    // Soft off combos
     combos {
         compatible = "zmk,combos";
         // Game layer activation
@@ -43,6 +48,12 @@
             bindings = <&soft_off_tap>;
             key-positions = <10 21>; // Q and P keys
         };
+
+        // Soft on combo (wake up)
+        soft_on_combo {
+            bindings = <&soft_on>;
+            key-positions = <10 21>; // Same keys used to turn off
+        };
     };
 
     // Soft off configuration
@@ -51,23 +62,6 @@
         label = "SOFT_OFF";
         // Wake up options
         wakeup-sources = <&soft_on_combo>;
-    };
-
-    // Combo to wake up from soft off
-    combos {
-        compatible = "zmk,combos";
-        soft_on_combo {
-            bindings = <&soft_on>;
-            key-positions = <10 21>; // Same keys used to turn off
-        };
-    };
-
-    // Soft on behavior
-    behaviors {
-        soft_on: soft_on {
-            compatible = "zmk,behavior-soft-on";
-            label = "SOFT_ON";
-        };
     };
 
     keymap {
