@@ -92,9 +92,9 @@
 
         layer_3 {
             bindings = <
-&none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &none
-&none  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)    &none         &none         &none         &none  &none  &none
-&none  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)    &none         &none         &none         &none  &none  &none
+&none  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none       &none
+&none  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)    &none         &none         &none         &none         &none       &none
+&none  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)    &none         &none         &none         &none         &bt BT_CLR  &none
                                     &kp LS(LPAR)   &kp LS(UNDER)  &kp LS(RPAR)    &trans        &none         &none
             >;
 
@@ -103,7 +103,7 @@
 
         layer_4 {
             bindings = <
-&none  &kp Q           &none           &kp E     &none      &kp ESC    &none    &none  &none  &none  &to 0  &none
+&none  &kp Q           &kp TAB         &none     &kp E      &kp ESC    &none    &none  &none  &none  &to 0  &none
 &none  &kp SPACE       &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp F      &none    &none  &none  &none  &none  &none
 &none  &kp LEFT_SHIFT  &none           &none     &none      &none      &none    &none  &none  &none  &none  &none
                                        &none     &kp UP     &none      &kp RET  &none  &none
