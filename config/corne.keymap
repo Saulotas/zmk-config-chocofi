@@ -64,7 +64,7 @@
 &none  &kp Q                        &kp W                      &kp E                   &kp R                      &kp T            &kp Y        &kp U                  &kp I                   &kp O                       &kp P                                 &none
 &none  &quick_mod_tap LEFT_SHIFT A  &quick_mod_tap LEFT_ALT S  &quick_mod_tap RCTRL D  &quick_mod_tap LEFT_WIN F  &kp G            &kp H        &quick_mod_tap RWIN J  &quick_mod_tap RCTRL K  &quick_mod_tap RIGHT_ALT L  &quick_mod_tap RIGHT_SHIFT SEMICOLON  &none
 &none  &kp Z                        &kp X                      &kp C                   &kp V                      &kp B            &kp N        &kp M                  &kp COMMA               &kp DOT                     &kp SLASH                             &none
-                                                               &lt 1 ESCAPE            &kp SPACE                  &kp BACKSPACE    &lt 3 ENTER  &lt 2 TAB              &kp K_MUTE
+                                                               &lt 1 ESCAPE            &kp SPACE                  &kp BACKSPACE    &lt 3 ENTER  &lt 2 TAB              &kp DELETE
             >;
         };
 
